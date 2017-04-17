@@ -1,0 +1,360 @@
+@keyframes color-change {
+	0% {background-color: #070113;}
+	25% {background-color: #011213;}
+	50% {background-color: #15010F;}
+	75% {background-color: #031300;}
+	100% {background-color: #070113;}
+}
+
+@keyframes walk-leg {
+	0% {transform: rotate(140deg)}
+	50% {transform: rotate(10deg)}
+	100% {transform: rotate(140deg)}
+}
+
+@keyframes walk-foreleg {
+	0% {transform: rotate(90deg)}
+	25% {transform: rotate(75deg)}
+	65% {transform: rotate(40deg)}
+	75% {transform: rotate(0deg)}
+	100% {transform: rotate(90deg)}
+}
+
+@keyframes walk-leg2 {
+	0% {transform: rotate(10deg)}
+	50% {transform: rotate(140deg)}
+	100% {transform: rotate(10deg)}
+}
+
+@keyframes walk-foreleg2 {
+	0% {transform: rotate(40deg)}
+	15% {transform: rotate(0deg)}
+	25% {transform: rotate(90deg)}
+	50% {transform: rotate(75deg)}
+	75% {transform: rotate(40deg)}
+	100% {transform: rotate(40deg)}
+}
+
+
+
+@keyframes slash-forearm2 {
+	0% {transform: rotate(0deg)}
+	80% {transform: rotate(-70deg)}
+	100% {transform: rotate(0deg)}
+}
+
+@keyframes slash-arm2 {
+	0% {transform: rotate(150deg)}
+	80% {transform: rotate(-40deg)}
+	100% {transform: rotate(150deg)}
+}
+
+@keyframes slash-forearm {
+	0% {transform: rotate(0deg)}
+	80% {transform: rotate(-70deg)}
+	100% {transform: rotate(0deg)}
+}
+
+@keyframes slash-arm {
+	0% {transform: rotate(120deg)}
+	80% {transform: rotate(-20deg)}
+	100% {transform: rotate(120deg)}
+}
+
+@keyframes slash-weapon {
+	0% {transform: rotate(-90deg)}
+	90% {transform: rotate(-100deg)}
+	100% {transform: rotate(-90deg)}
+}
+
+@keyframes jump-person {
+	0% {transform: translateY(20px)}
+	70% {transform: translateY(-170px)}
+	100% {transform: translateY(20px)}
+}
+
+@keyframes jump-leg{
+	0% {transform: rotate(115deg)}
+	70% {transform: rotate(125deg)}
+	100% {transform: rotate(115deg)}
+}
+
+@keyframes jump-foreleg{
+	0% {transform: rotate(40deg)}
+	90% {transform: rotate(5deg)}
+	100% {transform: rotate(40deg)}
+}
+
+@keyframes jump-leg2{
+	0% {transform: rotate(40deg)}
+	70% {transform: rotate(60deg)}
+	100% {transform: rotate(40deg)}
+}
+
+@keyframes jump-foreleg2{
+	0% {transform: rotate(30deg)}
+	70% {transform: rotate(20deg)}
+	100% {transform: rotate(30deg)}
+}
+
+@keyframes thrust-arm {
+	0% {transform: rotate(160deg)}
+	20% {transform: rotate(0deg)}
+	100% {transform: rotate(160deg)}
+}
+
+@keyframes thrust-forearm {
+	0% {transform: rotate(-175deg)}
+	20% {transform: rotate(0deg)}
+	100% {transform: rotate(-175deg)}
+}
+
+@keyframes thrust-arm2 {
+	0% {transform: rotate(150deg)}
+	20% {transform: rotate(0deg)}
+	100% {transform: rotate(150deg)}
+}
+
+@keyframes thrust-forearm2 {
+	0% {transform: rotate(-165deg)}
+	20% {transform: rotate(0deg)}
+	100% {transform: rotate(-165deg)}
+}
+
+@keyframes thrust-weapon {
+	0% {transform: translateX(-20px) rotate(10deg)}
+	20% {transform: translateX(-20px) rotate(0deg)}
+	100% {transform: translateX(-20px) rotate(10deg)}
+}
+
+@keyframes rest-person{
+	0% {transform: rotate(0deg) translateY(8px)}
+	40% {transform: rotate(0deg) translateY(0px)}
+	100% {transform: rotate(0deg) translateY(8px)}
+}
+
+@keyframes rest-arm {
+	0% {transform: rotate(30deg)}
+	40% {transform: rotate(35deg)}
+	100% {transform: rotate(30deg)}
+}
+
+
+@keyframes rest-arm2 {
+	0% {transform: rotate(32deg)}
+	40% {transform: rotate(37deg)}
+	100% {transform: rotate(32deg)}
+}
+
+
+@keyframes rest-forearm2 {
+	0% {transform: rotate(-12deg)}
+	40% {transform: rotate(-17deg)}
+	100% {transform: rotate(-12deg)}
+}
+
+@keyframes rest-leg{
+	0% {transform: rotate(100deg)}
+	40% {transform: rotate(110deg)}
+	100% {transform: rotate(100deg)}
+}
+
+@keyframes rest-foreleg{
+	0% {transform: rotate(60deg)}
+	40% {transform: rotate(30deg)}
+	100% {transform: rotate(60deg)}
+}
+
+@keyframes rest-leg2{
+	0% {transform: rotate(35deg)}
+	40% {transform: rotate(45deg)}
+	100% {transform: rotate(35deg)}
+}
+
+@keyframes rest-foreleg2{
+	0% {transform: rotate(30deg)}
+	40% {transform: rotate(20deg)}
+	100% {transform: rotate(30deg)}
+}
+
+
+@keyframes block-person{
+	0% {transform: rotate(5deg) translateY(8px)}
+	20% {transform: rotate(-19deg) translateY(15px)}
+	80% {transform: rotate(-20deg) translateY(15px)}
+	100% {transform: rotate(5deg) translateY(8px)}
+}
+
+@keyframes block-arm {
+	0% {transform: rotate(35deg)}
+	20% {transform: rotate(87deg)}
+	80% {transform: rotate(87deg)}
+	100% {transform: rotate(35deg)}
+}
+
+
+@keyframes block-arm2 {
+	0% {transform: rotate(35deg)}
+	20% {transform: rotate(-30deg)}
+	80% {transform: rotate(-30deg)}
+	100% {transform: rotate(35deg)}
+}
+
+@keyframes block-leg{
+	0% {transform: rotate(100deg)}
+	20% {transform: rotate(101deg)}
+	80% {transform: rotate(100deg)}
+	100% {transform: rotate(100deg)}
+}
+
+@keyframes block-foreleg{
+	0% {transform: rotate(60deg)}
+	20% {transform: rotate(89deg)}
+	80% {transform: rotate(89deg)}
+	100% {transform: rotate(60deg)}
+}
+
+@keyframes block-leg2{
+	0% {transform: rotate(25deg)}
+	20% {transform: rotate(29deg)}
+	80% {transform: rotate(30deg)}
+	100% {transform: rotate(25deg)}
+}
+
+@keyframes block-foreleg2{
+	0% {transform: rotate(30deg)}
+	20% {transform: rotate(70deg)}
+	80% {transform: rotate(70deg)}
+	100% {transform: rotate(30deg)}
+}
+
+@keyframes block-weapon{
+	0% {transform: rotate(-110deg)}
+	20% {transform: rotate(-135deg)}
+	80% {transform: rotate(-135deg)}
+	100% {transform: rotate(-110deg)}
+}
+
+.control1 {
+	position: fixed;
+	width: 50vw;
+	height: 100vh;
+	right: 0;
+	z-index: 99;
+}
+
+.control2{
+	position: fixed;
+	width: 50vw;
+	height: 100vh;
+	left: 0;
+	z-index: 99;
+}
+
+.point {
+	color: grey;
+}
+
+.containercontainer2 .container {
+	transform: scaleX(-1);
+}
+
+.containercontainer2 .person{
+	color: red;
+}
+
+.eyes{
+	position: absolute;
+	transform: translateY(0px);
+	font-size: 20px;
+}
+
+.mouth{
+	position: absolute;
+	transform-origin: 100%;
+	transform: rotate(90deg) translateX(17px);
+	font-size: 20px;
+}
+
+.person{
+	color: blue;
+	left: 300px;
+	position: absolute;
+	font-size: 30px;
+	animation: rest-person infinite 1s;
+	top: 35vh;
+}
+
+
+.arm {
+	position: absolute;
+	transform: rotate(90deg);
+	transform-origin: 20%;
+	animation: rest-arm infinite 1.0s;
+}
+.forearm {
+	position: absolute;
+	transform: rotate(-20deg);
+	transform-origin: 20%;
+	animation: rest-forearm infinite 1.0s;
+}
+
+.arm2 {
+	transform: rotate(100deg);
+	position: absolute;
+	transform-origin: 20%;
+	animation: rest-arm2 infinite 1.0s;
+}
+
+.forearm2 {
+	position: absolute;
+	transform-origin: 20%;
+	animation: rest-forearm2 infinite 1.0s;
+}
+
+.weapon {
+	position: absolute;
+	transform: rotate(-90deg);
+	transform-origin: -5%;
+	animation: rest-weapon infinite 1.0s;
+}
+
+.leg {
+	transform: rotate(100deg);
+	transform-origin: 20%;
+	position: absolute;
+	animation: rest-leg infinite 1.0s;
+}
+
+.foreleg {
+	position: absolute;
+	transform: rotate(50deg);
+	transform-origin: 10%;
+	animation: rest-foreleg infinite 1.0s;
+}
+
+
+.leg2 {
+	transform: rotate(40deg);
+	transform-origin: 20%;
+	position: absolute;
+	animation: rest-leg2 infinite 1.0s;
+}
+
+.foreleg2 {
+	position: absolute;
+	transform: rotate(30deg);
+	transform-origin: 10%;
+	animation: rest-foreleg2 infinite 1.0s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	user-select: none;
+	animation: color-change 30s infinite;
+}
