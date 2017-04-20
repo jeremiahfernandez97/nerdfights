@@ -1,32 +1,18 @@
-/**
-Copyright 2016 Jeremiah Fernandez
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 var key = 0;
 var map = {};
 
 function walk_left(who) {
 	var x = document.querySelector(who).getBoundingClientRect().left;
-	//if (x > -400) {
+	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script if (x > -400) {
 		document.querySelector(who).style.transform = 'translateX(' + (x - 20) + 'px)';
-	//}
+	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script }
 }
 
 function walk_right(who) {
 	var x = document.querySelector(who).getBoundingClientRect().left;
-	//if (x < 400) {
+	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script if (x < 400) {
 		document.querySelector(who).style.transform = 'translateX(' + (x + 20) + 'px)';
-	//}
+	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script }
 }
 
 function thrust(who) {
@@ -84,7 +70,7 @@ function detect_collision(){
 function go(){
 	var i, l = 100;
 	for(i = 0; i < l; i ++){
-		//pampagalaw sa right nerd
+		//please email jeremiahfernandezzzz@gmail.com regarding the use of this script pampagalaw sa right nerd
 		if (i == 39) {
 			if (map[i] == true) {
 				walk_right(".containercontainer2");
@@ -100,7 +86,7 @@ function go(){
 					walk_left(".containercontainer2");
 				}
 			} else {
-				//cancel_slash(".containercontainer2");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_slash(".containercontainer2");
 			}
 		} 
 		
@@ -108,7 +94,7 @@ function go(){
 			if (map[i] == true){
 				block(".containercontainer2");
 			} else {
-				//cancel_jump(".containercontainer2");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer2");
 			}
 		}
 		
@@ -117,7 +103,7 @@ function go(){
 				jump(".containercontainer2");
 				slash(".containercontainer2");
 			} else {
-				//rest(".containercontainer2");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script rest(".containercontainer2");
 			}
 		}
 		
@@ -127,7 +113,7 @@ function go(){
 		}
 		 
 		
-		//pampagalaw sa left nerd
+		//please email jeremiahfernandezzzz@gmail.com regarding the use of this script pampagalaw sa left nerd
 		if (i == 68) {
 			if (map[i] == true) {
 				if (Math.abs((document.querySelector(".containercontainer2 .person").getBoundingClientRect().left) - (document.querySelector(".containercontainer .person").getBoundingClientRect().left)) <= 160) {
@@ -137,7 +123,7 @@ function go(){
 					walk_right(".containercontainer");
 				}
 			} else {
-				//cancel_slash(".containercontainer");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_slash(".containercontainer");
 			}
 		}
 		
@@ -151,7 +137,7 @@ function go(){
 			if (map[i] == true){
 				block(".containercontainer");
 			} else {
-				//cancel_jump(".containercontainer");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer");
 			}
 		}
 		
@@ -160,7 +146,7 @@ function go(){
 				jump(".containercontainer");
 				slash(".containercontainer");
 			} else {
-				//cancel_jump(".containercontainer");
+				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer");
 			}
 		}
 		
