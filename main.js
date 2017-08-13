@@ -3,16 +3,12 @@ var map = {};
 
 function walk_left(who) {
 	var x = document.querySelector(who).getBoundingClientRect().left;
-	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script if (x > -400) {
-		document.querySelector(who).style.transform = 'translateX(' + (x - 20) + 'px)';
-	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script }
+	document.querySelector(who).style.transform = 'translateX(' + (x - 20) + 'px)';
 }
 
 function walk_right(who) {
 	var x = document.querySelector(who).getBoundingClientRect().left;
-	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script if (x < 400) {
-		document.querySelector(who).style.transform = 'translateX(' + (x + 20) + 'px)';
-	//please email jeremiahfernandezzzz@gmail.com regarding the use of this script }
+	document.querySelector(who).style.transform = 'translateX(' + (x + 20) + 'px)';
 }
 
 function thrust(who) {
@@ -70,7 +66,7 @@ function detect_collision(){
 function go(){
 	var i, l = 100;
 	for(i = 0; i < l; i ++){
-		//please email jeremiahfernandezzzz@gmail.com regarding the use of this script pampagalaw sa right nerd
+		//controls	 right nerd
 		if (i == 39) {
 			if (map[i] == true) {
 				walk_right(".containercontainer2");
@@ -86,7 +82,7 @@ function go(){
 					walk_left(".containercontainer2");
 				}
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_slash(".containercontainer2");
+				// do nothing
 			}
 		} 
 		
@@ -94,7 +90,7 @@ function go(){
 			if (map[i] == true){
 				block(".containercontainer2");
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer2");
+				// do nothing
 			}
 		}
 		
@@ -103,7 +99,7 @@ function go(){
 				jump(".containercontainer2");
 				slash(".containercontainer2");
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script rest(".containercontainer2");
+				// do nothingggg
 			}
 		}
 		
@@ -113,7 +109,7 @@ function go(){
 		}
 		 
 		
-		//please email jeremiahfernandezzzz@gmail.com regarding the use of this script pampagalaw sa left nerd
+		//controls for the left nerd
 		if (i == 68) {
 			if (map[i] == true) {
 				if (Math.abs((document.querySelector(".containercontainer2 .person").getBoundingClientRect().left) - (document.querySelector(".containercontainer .person").getBoundingClientRect().left)) <= 160) {
@@ -123,7 +119,7 @@ function go(){
 					walk_right(".containercontainer");
 				}
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_slash(".containercontainer");
+				// do nothingggg
 			}
 		}
 		
@@ -137,7 +133,7 @@ function go(){
 			if (map[i] == true){
 				block(".containercontainer");
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer");
+				// exactly
 			}
 		}
 		
@@ -146,7 +142,7 @@ function go(){
 				jump(".containercontainer");
 				slash(".containercontainer");
 			} else {
-				//please email jeremiahfernandezzzz@gmail.com regarding the use of this script cancel_jump(".containercontainer");
+				// same here
 			}
 		}
 		
@@ -172,6 +168,7 @@ window.addEventListener("load", function() {
 window.addEventListener("keyup", mapKeyUp, false);
 window.addEventListener("keydown", mapKeyDown, false);
 
+//stuff to prevent default browser behaviour
 function absorbEvent(event) {
   var e = event || window.event;
   e.preventDefault && e.preventDefault();
@@ -180,97 +177,3 @@ function absorbEvent(event) {
   e.returnValue = false;
   return false;
 }
-
-window.addEventListener("touchstart", absorbEvent, false);
-window.addEventListener("touchmove", absorbEvent, false);
-window.addEventListener("touchend", absorbEvent, false);
-window.addEventListener("touchcancel", absorbEvent, false);
-
-	document.querySelector(".control1").addEventListener('touchstart', handleTouchStart1, false);           
-	document.querySelector(".control1").addEventListener('touchmove', handleTouchMove1, false);
-	
-	var xDown1 = null;                                                        
-	var yDown1 = null;                                                        
-
-	function handleTouchStart1(evt) {                                         
-		xDown1 = evt.touches[0].clientX;                                      
-		yDown1 = evt.touches[0].clientY;                                      
-	};                                                
-
-	function handleTouchMove1(evt) {
-		if ( ! xDown1 || ! yDown1 ) {
-			return;
-		}
-
-		var xUp = evt.touches[0].clientX;                                    
-		var yUp = evt.touches[0].clientY;
-
-		var xDiff = xDown1 - xUp;
-		var yDiff = yDown1 - yUp;
-
-		if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
-			if ( xDiff > 0 ) {
-				map[37] = true;
-				document.querySelector(".control1").addEventListener("touchend", function() {map[37] = false}, false);
-			} else {
-				map[39] = true;
-				document.querySelector(".control1").addEventListener("touchend", function() {map[39] = false}, false);
-			}                       
-		} else {
-			if ( yDiff > 0 ) {
-				map[38] = true;
-				document.querySelector(".control1").addEventListener("touchend", function() {map[38] = false}, false);
-			} else { 
-				map[40] = true;
-				document.querySelector(".control1").addEventListener("touchend", function() {map[40] = false}, false);
-			}                                                                 
-		}
-	
-		xDown1 = null;
-		yDown1 = null;                                             
-	};
-	
-	document.querySelector(".control2").addEventListener('touchstart', handleTouchStart2, false);           
-	document.querySelector(".control2").addEventListener('touchmove', handleTouchMove2, false);
-	
-	var xDown2 = null;                                                        
-	var yDown2 = null;                                                        
-
-	function handleTouchStart2(evt) {                                         
-		xDown2 = evt.touches[0].clientX;                                      
-		yDown2 = evt.touches[0].clientY;                                      
-	};                                                
-
-	function handleTouchMove2(evt) {
-		if ( ! xDown2 || ! yDown2 ) {
-			return;
-		}
-
-		var xUp = evt.touches[0].clientX;                                    
-		var yUp = evt.touches[0].clientY;
-
-		var xDiff = xDown2 - xUp;
-		var yDiff = yDown2 - yUp;
-
-		if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
-			if ( xDiff > 0 ) {
-				map[65] = true;
-				document.querySelector(".control2").addEventListener("touchend", function() {map[65] = false}, false);
-			} else {
-				map[68] = true;
-				document.querySelector(".control2").addEventListener("touchend", function() {map[68] = false}, false);
-			}                       
-		} else {
-			if ( yDiff > 0 ) {
-				map[87] = true;
-				document.querySelector(".control2").addEventListener("touchend", function() {map[87] = false}, false);
-			} else { 
-				map[83] = true;
-				document.querySelector(".control2").addEventListener("touchend", function() {map[83] = false}, false);
-			}                                                                 
-		}
-	
-		xDown2 = null;
-		yDown2 = null;                                             
-	};
-	
