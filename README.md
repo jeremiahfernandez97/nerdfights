@@ -1,2 +1,1 @@
-http://jeremiahfernandezzzz.github.io/nerdfights
-try this out
+http://jeremiahfernandez97.github.io/nerdfights
